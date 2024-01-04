@@ -103,3 +103,5 @@ voc_2007-extremal_perturbation_with_simple_scale_and_crop_with_gp_log_prob_sampl
 /root/evaluate-saliency-4/elp_with_scales/scripts/log_many_saliency_dec13.py
 ls -l voc_2007-extremal_perturbation_with_simple_scale_and_crop_with_gp_log_prob_sample1_freq_1_ncrops1_100-resnet50/*/*.xz | grep Oct | wc -l
 
+# bash get path of script 
+mypath=`realpath ${BASH_SOURCE[0]}`
