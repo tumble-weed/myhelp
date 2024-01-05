@@ -38,6 +38,10 @@ If you want to also delete files from destination, to make it match source, use 
 2. Search for processes including their command-line options:
 pgrep --full "process_name parameter"
 
+# vast copy
+The copy command uses rsync and is generally fast and efficient, subject to single link upload/download constraints.
+vast copy ~/workspace 4330147:/workspace
+That will copy the local ~/workspace (workspace folder of current user home directory) into the absolute path /workspace on instance 4330147.
 # rsync
 
 # ssh
