@@ -84,6 +84,9 @@ zip my_final_filename.zip my_first_file my_second_file... my_last_file
 
 #datetime now
 datetime.datetime.now.strftime("%Y-%m-%d %H:%M:%S")
+# kill background job
+kill %1
+kill %%
 
 # trace
 https://stackoverflow.com/questions/50558849/python-how-to-trace-function-execution-order-in-large-project
