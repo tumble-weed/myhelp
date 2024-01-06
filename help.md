@@ -112,3 +112,17 @@ ls -l voc_2007-extremal_perturbation_with_simple_scale_and_crop_with_gp_log_prob
 
 # bash get path of script 
 mypath=`realpath ${BASH_SOURCE[0]}`
+
+# bash get input in function
+function print_instance_name() {
+    local instance_name="$1"
+    echo "Instance Name: $instance_name"
+}
+# bash print all arguments
+print_arguments() {
+    echo "Number of arguments: $#"
+    echo "All arguments: \$@ -> $@"
+}
+print_arguments arg1 arg2 "arg 3" arg4
+# bash if modelname 50 or 16
+
