@@ -126,3 +126,5 @@ print_arguments() {
 print_arguments arg1 arg2 "arg 3" arg4
 # bash if modelname 50 or 16
 
+# bash default arguments
+arg1="${1:-avalue}"
