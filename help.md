@@ -13,6 +13,8 @@ if src is directory
 This doesn't transfer files that are identical on src and dst, testing by size and modification time or MD5SUM. It doesn't delete files from the destination.
 
 __copy__
+(Does not transfer files that are identical on source and destination, testing by size and modification time or MD5SUM)
+Note that it is always the contents of the directory that is synced, not the directory itself. So when source:path is a directory, it's the contents of source:path that are copied, not the directory name and contents.
 rclone copy source:sourcepath dest:destpath
 
 Let's say there are two files in sourcepath
@@ -131,8 +133,11 @@ arg1="${1:-avalue}"
 
 # git reset
 -- hard
-This is the most direct, DANGEROUS, and frequently used option. When passed --hard The Commit History ref pointers are updated to the specified commit. Then, the Staging Index and Working Directory are reset to match that of the specified commit. Any previously pending changes to the Staging Index and the Working Directory gets reset to match the state of the Commit Tree. This means any pending work that was hanging out in the Staging Index and Working Directory will be lost.
-Here we have executed a "hard reset" using the --hard option. Git displays output indicating that HEAD is pointing to the latest commit dc67808. Next, we check the state of the repo with git status. Git indicates there are no pending changes. We also examine the state of the Staging Index and see that it has been reset to a point before new_file was added. Our modifications to reset_lifecycle_file and the addition of new_file have been destroyed. This data loss cannot be undone, this is critical to take note of.
+This is the most direct, DANGEROUS, and frequently used option. When passed --hard The Commit History ref pointers are updated to the specified commit. Then, the Staging Index and Working Directory are reset to match that of the specified commit. Any previously pending changes to the Staging Index and the Working Directory gets reset to match the state of the Commit Tree. 
+
+This means any pending work that was hanging out in the Staging Index and Working Directory will be lost.
+Here we have executed a "hard reset" using the --hard option. 
+Git displays output indicating that HEAD is pointing to the latest commit dc67808. Next, we check the state of the repo with git status. Git indicates there are no pending changes. We also examine the state of the Staging Index and see that it has been reset to a point before new_file was added. Our modifications to reset_lifecycle_file and the addition of new_file have been destroyed. This data loss cannot be undone, this is critical to take note of.
 --mixed
 This is the default operating mode. The ref pointers are updated. The Staging Index is reset to the state of the specified commit. Any changes that have been undone from the Staging Index are moved to the Working Directory. -mixed is the default mode and the same effect as executing git reset. Examining the output from git status and git ls-files, shows that the Staging Index has been reset to a state where reset_lifecycle_file is the only file in the index. The object SHA for reset_lifecycle_file has been reset to the previous version.
 The important things to take note of here is that git status shows us that there are modifications to reset_lifecycle_file and there is an untracked file: new_file. This is the explicit --mixed behavior. The Staging Index has been reset and the pending changes have been moved into the Working Directory. Compare this to the --hard reset case where the Staging Index was reset and the Working Directory was reset as well, losing these updates.
