@@ -152,3 +152,10 @@ You can directly use GitHub's raw content URL to serve files. Replace blob with 
 A="X Y"
 A+=" Z"
 echo "$A"
+
+# arrays in bash
+
+declare -a array
+array=(one two three)
+
+echo "${array_name[@]}"
