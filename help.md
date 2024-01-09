@@ -143,4 +143,7 @@ When the --soft argument is passed, the ref pointers are updated and the reset s
 # github rawfile
 You can directly use GitHub's raw content URL to serve files. Replace blob with raw in the file URL to get the raw content link. For example: https://github.com/username/repository/raw/main/path/to/file.ext
 
-
+# concatenate to string
+A="X Y"
+A+=" Z"
+echo "$A"
