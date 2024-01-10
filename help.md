@@ -159,3 +159,6 @@ declare -a array
 array=(one two three)
 
 echo "${array_name[@]}"
+
+# grep exclude
+grep -v
