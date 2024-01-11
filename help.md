@@ -162,3 +162,14 @@ echo "${array_name[@]}"
 
 # grep exclude
 grep -v
+
+# output of ls into an array
+files=$(ls)
+
+# Initialize an empty array
+file_array=()
+
+# Use a while loop to read each line of the ls output into the array
+while IFS= read -r file; do
+    file_array+=("$file")
+done <<< "$files"
