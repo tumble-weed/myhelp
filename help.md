@@ -175,4 +175,8 @@ while IFS= read -r file; do
 done <<< "$files"
 # find sh files in the current directory
 find . -maxdepth 1 -type f -name '*.sh'
-
+# vim lookbehind
+In vim, lookbehind uses the special @ symbol, rather than the perl (?<=somestring) syntax.
+foo \zsbar\ze baz matches the “bar” in foo bar baz. But the whole pattern is still required
+\(atom\)\@<= 
+atom is he look behind string
