@@ -173,3 +173,6 @@ file_array=()
 while IFS= read -r file; do
     file_array+=("$file")
 done <<< "$files"
+# find sh files in the current directory
+find . -maxdepth 1 -type f -name '*.sh'
+
