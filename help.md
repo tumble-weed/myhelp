@@ -207,3 +207,8 @@ _mycommand() {
 }
 
 complete -F _mycommand mycommand
+
+# git pull but dont overwrite
+git stash --include-untracked
+git pull
+git stash pop
