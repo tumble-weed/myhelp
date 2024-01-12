@@ -180,3 +180,12 @@ In vim, lookbehind uses the special @ symbol, rather than the perl (?<=somestrin
 foo \zsbar\ze baz matches the “bar” in foo bar baz. But the whole pattern is still required
 \(atom\)\@<= 
 atom is he look behind string
+
+# bash check if string is empty
+myVar=""
+if [ -z "$myVar" ]; then
+    echo "myVar is empty"
+else
+    echo "myVar is not empty"
+fi
+
