@@ -189,3 +189,21 @@ else
     echo "myVar is not empty"
 fi
 
+#using completion
+compgen -W "eric tom" -- "c"
+
+_mycommand() {
+    local cur prev
+    COMPREPLY=()
+    cur="${COMP_WORDS[COMP_CWORD]}"
+    prev="${COMP_WORDS[COMP_CWORD-1]}"
+
+    # Get a list of files in the config_files/ folder
+    files=$(find config_files/ -type f -printf "%f\n")
+
+    # Use compgen to generate autocompletion suggestions
+    COMPREPLY=( $(compgen -W "$files" -- "$cur") )
+    return 0
+}
+
+complete -F _mycommand mycommand
