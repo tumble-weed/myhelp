@@ -31,6 +31,8 @@ Not to
 
 destpath/sourcepath/one.txt
 destpath/sourcepath/two.txt
+__soft links__
+-L , read up on this
 
 __sync__
 If you want to also delete files from destination, to make it match source, use the sync command instead.
@@ -212,3 +214,22 @@ complete -F _mycommand mycommand
 git stash --include-untracked
 git pull
 git stash pop
+
+# multiple commands in watch per line
+watch -n 1 '{
+    echo "Command 1 output"
+    ls -l
+    echo "Command 2 output"
+    df -h
+    # Add more commands as needed
+}'
+
+# how do i copy the output of a bash command to the clipboard, so that i can paste it using ctrl+v
+sudo apt-get install xclip
+your_command | xclip -selection clipboard
+If you prefer to use xsel, the syntax is quite similar:
+your_command | xsel --clipboard
+Error: Can't open display: (null)
+
+#vim turn off regex mode
+\V (capital v)
