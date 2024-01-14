@@ -233,3 +233,7 @@ Error: Can't open display: (null)
 
 #vim turn off regex mode
 \V (capital v)
+
+# ssh and change to directory
+ssh -t vast-118 'cd /root/evaluate-saliency-4/elp_with_scales && exec bash -i'
+This command uses the `-t` option to force a pseudo-tty allocation,
