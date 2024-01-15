@@ -259,4 +259,8 @@ done
 1 2
 3 4
 """
+# bash loop variable
+count=1
+((++count))
+
 # bash how to keep loop variable, increment it, and check for value
