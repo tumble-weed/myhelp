@@ -259,4 +259,4 @@ done
 1 2
 3 4
 """
-
+# bash how to keep loop variable, increment it, and check for value
