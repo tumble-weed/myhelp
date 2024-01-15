@@ -263,4 +263,6 @@ done
 count=1
 ((++count))
 
-# bash how to keep loop variable, increment it, and check for value
+# bash check value less than
+ [ "$count" -le 5 ];
+
