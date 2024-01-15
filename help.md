@@ -237,3 +237,26 @@ Error: Can't open display: (null)
 # ssh and change to directory
 ssh -t vast-118 'cd /root/evaluate-saliency-4/elp_with_scales && exec bash -i'
 This command uses the `-t` option to force a pseudo-tty allocation,
+
+# bash interating over arrays whose elements have spaces
+WRONG:
+ar=("1 2" "3 4")
+for el in ${ar[@]};do
+    echo $el
+done
+"""
+1
+2
+3
+4
+"""
+CORRECT
+ar=("1 2" "3 4")
+for el in "${ar[@]}";do
+    echo $el
+done
+"""
+1 2
+3 4
+"""
+
