@@ -262,6 +262,7 @@ done
 # bash loop variable
 count=1
 ((++count))
+in Bash, the use of double parentheses (( ... )) is a syntax for arithmetic evaluation. The double parentheses are used for arithmetic operations, including incrementing or decrementing variables.
 
 # bash check value less than
  [ "$count" -le 5 ];
