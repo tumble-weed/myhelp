@@ -266,4 +266,7 @@ in Bash, the use of double parentheses (( ... )) is a syntax for arithmetic eval
 
 # bash check value less than
  [ "$count" -le 5 ];
-
+# <,<<,<<< in bash
+     < is used for input redirection from a file.
+    << is used for creating a here document, allowing you to provide a block of text as input to a command.
+    <<< is used for creating a here string, allowing you to provide a string as input to a command.
