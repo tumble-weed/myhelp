@@ -272,3 +272,8 @@ in Bash, the use of double parentheses (( ... )) is a syntax for arithmetic eval
     <<< is used for creating a here string, allowing you to provide a string as input to a command.
 # vim syntax highlighting
     https://vi.stackexchange.com/questions/40208/syntax-highlighting-for-shell-scripts-broken
+# matplotlib pyplot reverse order of axis in scatter plot
+# Reverse the order of the axes
+ax.invert_xaxis()
+ax.invert_yaxis()
+ax.invert_zaxis()
