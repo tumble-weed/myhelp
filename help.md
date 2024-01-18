@@ -277,3 +277,17 @@ in Bash, the use of double parentheses (( ... )) is a syntax for arithmetic eval
 ax.invert_xaxis()
 ax.invert_yaxis()
 ax.invert_zaxis()
+
+# vim paste
+For pasting in vim while auto-indent is enabled, you must change to paste mode by typing:
+
+:set paste
+
+Then you can change to insert mode and paste your code. After pasting is done, type:
+
+:set nopaste
+
+to turn off paste mode. Since this is a common and frequent action, vim offers toggling paste mode:
+
+set pastetoggle=<F2>
+
