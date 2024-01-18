@@ -294,3 +294,19 @@ set pastetoggle=<F2>
 # TRY  git between directories
 git diff --no-index path/to/repo1/file.txt path/to/repo2/file.txt
 
+# access particular row of array
+my_array=("apple" "banana" "cherry" "date")
+echo "First element: ${my_array[0]}"
+
+# trap error handling
+function dummy(){
+
+trap cleanup EXIT
+}
+
+# bash dictionary 
+declare -A my_dict
+my_dict["apple"]="fruit"
+echo "Type of coffee now: ${my_dict["coffee"]}"
+
+# difference between [[ and [ in bash test
