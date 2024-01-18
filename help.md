@@ -291,3 +291,6 @@ to turn off paste mode. Since this is a common and frequent action, vim offers t
 
 set pastetoggle=<F2>
 
+# TRY  git between directories
+git diff --no-index path/to/repo1/file.txt path/to/repo2/file.txt
+
