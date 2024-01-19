@@ -316,3 +316,5 @@ echo "Type of coffee now: ${my_dict["coffee"]}"
     [[ ]]: Quoting is often not necessary inside double square brackets, though it doesn't hurt to use quotes for consistency.
 
 # bash collect all command line arguments into a function and if no argument is given take default arguments
+# embed tmux within tmux
+# different types of checks ( existence of file, of dir, variable, )
