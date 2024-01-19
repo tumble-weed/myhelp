@@ -310,3 +310,7 @@ my_dict["apple"]="fruit"
 echo "Type of coffee now: ${my_dict["coffee"]}"
 
 # difference between [[ and [ in bash test
+    [ ]: The single square brackets are the traditional test command. They require spaces around the operands and operators.
+    [[ ]]: The double square brackets are an enhanced version introduced in Bash that allows for more features and flexibility. They don't require spaces around the operands and operators, and they support additional features like pattern matching and regular expressions.
+    [ ]: Variables and strings inside single square brackets should be quoted to avoid issues with spaces or special characters.
+    [[ ]]: Quoting is often not necessary inside double square brackets, though it doesn't hurt to use quotes for consistency.
