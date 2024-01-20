@@ -318,3 +318,6 @@ echo "Type of coffee now: ${my_dict["coffee"]}"
 # bash collect all command line arguments into a function and if no argument is given take default arguments
 # embed tmux within tmux
 # different types of checks ( existence of file, of dir, variable, )
+# how  much time did a bash command take
+# read in a file in bash
+# sed awk in bash
