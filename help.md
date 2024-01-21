@@ -321,3 +321,17 @@ echo "Type of coffee now: ${my_dict["coffee"]}"
 # how  much time did a bash command take
 # read in a file in bash
 # sed awk in bash
+# bash identify unset variables
+ bash -u ./add_values.sh
+./add_values.sh: line 4: tow_val: unbound variable
+# Trap for Debug
+We can utilize the DEBUG trap feature of Bash to execute a command repetitively.  The command specified in the arguments of trap command is executed before each subsequent statement in the script.
+
+Let’s illustrate this with an example:
+
+trap 'echo "Line- ${LINENO}: five_val=${five_val}, two_val=${two_val}, total=${total}" ' DEBUG
+five_val=5
+two_val=2
+total=$((five_val+two_val))
+echo "Total is: $total"
+total=0 && echo "Resetting Total"
