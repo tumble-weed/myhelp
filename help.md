@@ -339,3 +339,6 @@ total=0 && echo "Resetting Total"
 
 # vim open files side by side:
 vim -O file1 -O file2
+# vim insert line below the line with a search result
+:/example/s/$/\rNew line text
+
