@@ -342,3 +342,4 @@ vim -O file1 -O file2
 # vim insert line below the line with a search result
 :/example/s/$/\rNew line text
 
+# subshell and shell
