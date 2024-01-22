@@ -336,3 +336,6 @@ two_val=2
 total=$((five_val+two_val))
 echo "Total is: $total"
 total=0 && echo "Resetting Total"
+
+# vim open files side by side:
+vim -O file1 -O file2
