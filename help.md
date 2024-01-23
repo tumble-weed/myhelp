@@ -342,4 +342,7 @@ vim -O file1 -O file2
 # vim insert line below the line with a search result
 :/example/s/$/\rNew line text
 
-# subshell and shell
+# bash why ${var1_var2} , does _ act as a concatenation?
+# bash subshell and shell
+# read file into a bash script ( not line by line)
+
