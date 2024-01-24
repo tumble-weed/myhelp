@@ -350,3 +350,5 @@ parser.add_argument('--save-dir', dest='save_dir',
                     help='The directory used to save the trained models',
                     default='save_temp', type=str)
 # cat + search
+# click in python
+# sound input in browser for python app
