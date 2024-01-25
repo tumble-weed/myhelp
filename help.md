@@ -357,3 +357,4 @@ parser.add_argument('--save-dir', dest='save_dir',
 # check if port is being forwarded or not
 # rclone check if files are the same
 rclone check
+# list all py files in a folder and open them side by side in vim
