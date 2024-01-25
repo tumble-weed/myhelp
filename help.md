@@ -358,3 +358,4 @@ parser.add_argument('--save-dir', dest='save_dir',
 # rclone check if files are the same
 rclone check
 # list all py files in a folder and open them side by side in vim
+# vim getfilename from a env variable and open it
