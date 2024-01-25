@@ -343,6 +343,7 @@ vim -O file1 -O file2
 :/example/s/$/\rNew line text
 
 # bash why ${var1_var2} , does _ act as a concatenation?
+no. tried it out
 # bash subshell and shell
 # read file into a bash script ( not line by line)
 # python using the different arg name than variable name in argparse
