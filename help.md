@@ -359,3 +359,5 @@ parser.add_argument('--save-dir', dest='save_dir',
 rclone check
 # list all py files in a folder and open them side by side in vim
 # vim getfilename from a env variable and open it
+# latex new command
+\newcommand{\todo}[1]{\textcolor{#1}}
