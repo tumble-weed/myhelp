@@ -345,10 +345,12 @@ vim -O file1 -O file2
 # bash why ${var1_var2} , does _ act as a concatenation?
 # bash subshell and shell
 # read file into a bash script ( not line by line)
-# using the different arg name than variable name in argparse
+# python using the different arg name than variable name in argparse
 parser.add_argument('--save-dir', dest='save_dir',
                     help='The directory used to save the trained models',
                     default='save_temp', type=str)
 # cat + search
 # click in python
 # sound input in browser for python app
+# setting any program as a service
+# check if port is being forwarded or not
