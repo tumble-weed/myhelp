@@ -355,3 +355,5 @@ parser.add_argument('--save-dir', dest='save_dir',
 # sound input in browser for python app
 # setting any program as a service
 # check if port is being forwarded or not
+# rclone check if files are the same
+rclone check
