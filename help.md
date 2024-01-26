@@ -356,9 +356,12 @@ readarray -t my_array <<< "$(ls)"
 [ $var1 == "a" ]  && [ $var2 == "b" ]
 [ $var1 != "a" ]  && [ $var2 == "b" ]
 # bash different types of checks ( existence of file, of dir, variable, )
+file [[  -f "file" ]]
+directory [[ -d "directory" ]]
+variable [[ -v varname ]]
+# bash ls sort by date
 # bash subshell and shell
 # bash read file into a bash script ( not line by line)
-# bash ls sort by date
 # bash ps format ps command to get pid
 # bash how  much time did a bash command take
 # bash read in a file in bash
