@@ -314,14 +314,8 @@ echo "Type of coffee now: ${my_dict["coffee"]}"
     [[ ]]: The double square brackets are an enhanced version introduced in Bash that allows for more features and flexibility. They don't require spaces around the operands and operators, and they support additional features like pattern matching and regular expressions.
     [ ]: Variables and strings inside single square brackets should be quoted to avoid issues with spaces or special characters.
     [[ ]]: Quoting is often not necessary inside double square brackets, though it doesn't hurt to use quotes for consistency.
-
-# bash collect all command line arguments into a function and if no argument is given take default arguments
 # embed tmux within tmux
 TMUX= tma t-inner
-# different types of checks ( existence of file, of dir, variable, )
-# how  much time did a bash command take
-# read in a file in bash
-# sed awk in bash
 # bash identify unset variables
  bash -u ./add_values.sh
 ./add_values.sh: line 4: tow_val: unbound variable
@@ -344,26 +338,36 @@ vim -O file1 -O file2
 
 # bash why ${var1_var2} , does _ act as a concatenation?
 no. tried it out
-# bash subshell and shell
-# bash read file into a bash script ( not line by line)
 # python using the different arg name than variable name in argparse
 parser.add_argument('--save-dir', dest='save_dir',
                     help='The directory used to save the trained models',
                     default='save_temp', type=str)
-# bash cat + search
-# python click in python
-# js sound input in browser for python app
-# bash setting any program as a service
-# bash check if port is being forwarded or not
 # rclone check if files are the same
 rclone check
-# bash list all py files in a folder and open them side by side in vim
-# vim getfilename from a env variable and open it
 # latex new command
 \newcommand{\todo}[1]{\textcolor{#1}}
-# bash or conditions in if ( if a=='y') or (if a == 'Y')
 # bash capture output of ls in an array
 When you use the backticks (``) or the $(...) syntax to capture the output of a command, the result is treated as a single string, not as an array.
 readarray -t my_array <<< "$(ls)"
+#=====================================================
+# python click in python
+# js sound input in browser for python app
+# bash subshell and shell
+# bash read file into a bash script ( not line by line)
+# bash or conditions in if ( if a=='y') or (if a == 'Y')
 # bash ls sort by date
 # bash ps format ps command to get pid
+# bash different types of checks ( existence of file, of dir, variable, )
+# bash how  much time did a bash command take
+# bash read in a file in bash
+# bash sed awk in bash
+# bash collect all command line arguments into a function and if no argument is given take default arguments
+# bash cat + search
+# bash setting any program as a service
+# bash check if port is being forwarded or not
+# bash list all py files in a folder and open them side by side in vim
+# vim getfilename from a env variable and open it
+# bash find 2 lines that both start with #
+# js interpeter/ compiler
+# python save the audio file and then download it
+
