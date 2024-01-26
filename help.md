@@ -374,3 +374,6 @@ readarray -t my_array <<< "$(ls)"
 # js what is a blob
 # js what is POST and GET?
 # js => function
+
+# python uvicorn start app
+uvicorn server:app --reload --host 0.0.0.0 --port 8002
