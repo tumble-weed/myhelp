@@ -365,4 +365,5 @@ rclone check
 # bash capture output of ls in an array
 When you use the backticks (``) or the $(...) syntax to capture the output of a command, the result is treated as a single string, not as an array.
 readarray -t my_array <<< "$(ls)"
-
+# bash ls sort by date
+# bash ps format ps command to get pid
