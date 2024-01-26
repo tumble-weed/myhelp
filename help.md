@@ -377,3 +377,4 @@ readarray -t my_array <<< "$(ls)"
 
 # python uvicorn start app
 uvicorn server:app --reload --host 0.0.0.0 --port 8002
+# git different gitusers for different directories
