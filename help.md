@@ -345,20 +345,21 @@ vim -O file1 -O file2
 # bash why ${var1_var2} , does _ act as a concatenation?
 no. tried it out
 # bash subshell and shell
-# read file into a bash script ( not line by line)
+# bash read file into a bash script ( not line by line)
 # python using the different arg name than variable name in argparse
 parser.add_argument('--save-dir', dest='save_dir',
                     help='The directory used to save the trained models',
                     default='save_temp', type=str)
-# cat + search
-# click in python
-# sound input in browser for python app
-# setting any program as a service
-# check if port is being forwarded or not
+# bash cat + search
+# python click in python
+# js sound input in browser for python app
+# bash setting any program as a service
+# bash check if port is being forwarded or not
 # rclone check if files are the same
 rclone check
-# list all py files in a folder and open them side by side in vim
+# bash list all py files in a folder and open them side by side in vim
 # vim getfilename from a env variable and open it
 # latex new command
 \newcommand{\todo}[1]{\textcolor{#1}}
 # bash or conditions in if ( if a=='y') or (if a == 'Y')
+# bash capture output of ls in an array
