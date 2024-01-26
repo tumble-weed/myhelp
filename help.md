@@ -379,3 +379,5 @@ readarray -t my_array <<< "$(ls)"
 uvicorn server:app --reload --host 0.0.0.0 --port 8002
 # git different gitusers for different directories
 # or set crenetials when you login, and use that just within that session. in envvariables $GH
+# fastapi mounting static files
+app.mount("/", StaticFiles(directory=".", html=True), name="static")
