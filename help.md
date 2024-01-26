@@ -352,12 +352,14 @@ readarray -t my_array <<< "$(ls)"
 #=====================================================
 # python click in python
 # js sound input in browser for python app
+# bash or conditions in if ( if a=='y') or (if a == 'Y')
+[ $var1 == "a" ]  && [ $var2 == "b" ]
+[ $var1 != "a" ]  && [ $var2 == "b" ]
+# bash different types of checks ( existence of file, of dir, variable, )
 # bash subshell and shell
 # bash read file into a bash script ( not line by line)
-# bash or conditions in if ( if a=='y') or (if a == 'Y')
 # bash ls sort by date
 # bash ps format ps command to get pid
-# bash different types of checks ( existence of file, of dir, variable, )
 # bash how  much time did a bash command take
 # bash read in a file in bash
 # bash sed awk in bash
