@@ -370,4 +370,7 @@ readarray -t my_array <<< "$(ls)"
 # bash find 2 lines that both start with #
 # js interpeter/ compiler
 # python save the audio file and then download it
-
+# js fetch
+# js what is a blob
+# js what is POST and GET?
+# js => function
