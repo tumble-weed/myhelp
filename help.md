@@ -361,3 +361,4 @@ rclone check
 # vim getfilename from a env variable and open it
 # latex new command
 \newcommand{\todo}[1]{\textcolor{#1}}
+# bash or conditions in if ( if a=='y') or (if a == 'Y')
