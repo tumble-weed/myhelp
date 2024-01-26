@@ -363,3 +363,4 @@ rclone check
 \newcommand{\todo}[1]{\textcolor{#1}}
 # bash or conditions in if ( if a=='y') or (if a == 'Y')
 # bash capture output of ls in an array
+When you use the backticks (``) or the $(...) syntax to capture the output of a command, the result is treated as a single string, not as an array.
