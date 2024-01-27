@@ -373,7 +373,9 @@ variable [[ -v varname ]]
 # bash list all py files in a folder and open them side by side in vim
 # vim getfilename from a env variable and open it
 # bash find 2 lines that both start with #
+# bash what does $* mean 
 # js interpeter/ compiler
+node
 # python save the audio file and then download it
 # js fetch
 # js what is a blob
@@ -384,7 +386,7 @@ variable [[ -v varname ]]
 uvicorn server:app --reload --host 0.0.0.0 --port 8002
 # git different gitusers for different directories
 # or set crenetials when you login, and use that just within that session. in envvariables $GH
-# fastapi mounting static files
+# python fastapi mounting static files
 app.mount("/", StaticFiles(directory=".", html=True), name="static")
 # passing variables to subshells
 
