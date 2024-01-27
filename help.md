@@ -396,3 +396,51 @@ Running
 set -a
 
 ...will make any variable defined going forward be automatically exported to the environment, even without an explicit export command.
+# Environment vars vs shell vars
+
+Explanation
+
+Environment variables and shell variables are two entirely different concepts, but as we manipulate them in a similar way in bash, it's easy to get confused.
+
+    Whenever a process is created (by fork), it may include an environment, given by its parent at fork-time. The child process may then access and modify its content. How this is done as a user depends on the program :
+        In vim, you can access an environment variable like this : :echo $foo
+        In bash, you can access it like this : $ echo "$foo"
+        In most programming languages, you can access it with a syntax coherent with the rest of the language, such as ENV['foo'] in ruby
+
+    On the other hand, a program may allocate memory for any internal use, but notably, it will quite often define and use variables. Once again, this depends on the program :
+        In vim, you would use the :let command to assign an internal variable
+        In bash, you would assign a variable with $ foo='bar', and then read it with $ echo "$foo"
+        In most programming languages, you have a variation of the foo='bar' syntax, sometimes with type declarations, etc
+
+As you can see, bash uses the same syntax to read an environment variable and one of its own private variables, which can lead to some confusion.
+
+When you execute vim from your bash shell, the environment is copied over from the parent process (bash) to the child (vim), but the private memory of bash (including the variables you may have defined) are not.
+
+Thus, accessing them from the child process would require some inter-process communication mechanism, between parent and child. While technically doable, this option is not implemented in bash nor vim.
+Solution
+
+In order for your variable to be accessible from vim (or any forked process, for that matter), you need it to be present in the environment of your vim process.
+
+Several options to do that :
+
+    $ export foo='bar' : This will mark your variable for export to the environment of subsequently executed commands. That's what you want in most cases.
+    $ foo='bar' vim : This adds your variable to the environment of this vim command. Very useful for troubleshooting, or for one-liners.
+    $ set -a : As you can see in bash manpage, this marks every subsequent definitions for export to the environment of subsequent commands. It's essentially equivalent to prepending every subsequent definition by export.
+
+To go further
+
+    The question uses the :!echo $foo syntax to display the value of foo, which is yet another usecase. The ! here is actually an escape sequence that allows you to execute a shell command from vim.
+
+    However, vim cannot execute anything in the parent shell (the one you executed the vim command in), so it creates a new bash shell in a child process, executes echo in it, and displays the result.
+
+    In the current case, the result is mostly the same, but it could easily be misleading in other situations, so it's important to understand what is happening here.
+
+    There is another vim syntax, using expand, that allows one to lookup variables : :echo expand("$foo")
+
+    It however works entirely differently.
+
+    If no internal variable named foo exists, vim will invoke a shell to look it up (similarly to what ! would do).
+
+    This options is way slower than an environment lookup, and not recommended for most usecases.
+
+
