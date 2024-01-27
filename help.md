@@ -386,3 +386,13 @@ uvicorn server:app --reload --host 0.0.0.0 --port 8002
 # or set crenetials when you login, and use that just within that session. in envvariables $GH
 # fastapi mounting static files
 app.mount("/", StaticFiles(directory=".", html=True), name="static")
+# passing variables to subshells
+
+
+No, you can't interact with the parent shell from a subprocess it spawned (without that shell's active participation, which isn't reasonably/practically available in the scenario at hand) -- but you can export your variables to make them accessible to new shells started in child processes.
+
+Running
+
+set -a
+
+...will make any variable defined going forward be automatically exported to the environment, even without an explicit export command.
