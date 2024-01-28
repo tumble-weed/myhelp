@@ -484,3 +484,22 @@ function f2()
 
 f2
 # git change last commit message
+# bash run in directory context manager
+function runindir1(){
+    d="$1"
+    shift
+    inner="$*"
+    curdir=`pwd`
+    cd $d
+    ${inner}
+    trap "cd $curdir" EXIT
+    trap "cd $curdir" ERR
+    }
+f1(){
+runindir1 /root/vast-utils
+cat setup.sh
+}
+f1
+# bash order of runs when multiple traps are set
+# bash run a command with spaces 
+eval $cmd
