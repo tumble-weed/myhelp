@@ -447,3 +447,5 @@ To go further
 
 # using " around array might have a different usage from when used around a single element
 # alias in ipdb
+# js what are audio blobs in the browser?
+# js create a python script to send a request to a webpage
