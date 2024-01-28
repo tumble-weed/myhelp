@@ -459,3 +459,4 @@ else
 fi
 # bash extract directory from 
 vimtorchraysmallerdataset is aliased to `vim /root/evaluate-saliency-4/elp_with_scales/torchray/benchmark/smaller_datasets.py'
+# python get argmax of list
