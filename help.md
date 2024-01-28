@@ -462,3 +462,5 @@ vimtorchraysmallerdataset is aliased to `vim /root/evaluate-saliency-4/elp_with_
 # python get argmax of list
 max_epoch = max(enumerate(epochs),key=lambda k:k[1])[0]
 # vim persist copies between session
+# check if tmux session exists
+# send command to tmux session
