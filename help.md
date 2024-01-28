@@ -457,4 +457,5 @@ if [ "$DBG_TORCHRAY" -eq 1 ];then
 else
     python generate_run_script.py --json_filename run-jsons/$json_filename
 fi
-
+# bash extract directory from 
+vimtorchraysmallerdataset is aliased to `vim /root/evaluate-saliency-4/elp_with_scales/torchray/benchmark/smaller_datasets.py'
