@@ -464,3 +464,4 @@ max_epoch = max(enumerate(epochs),key=lambda k:k[1])[0]
 # vim persist copies between session
 # check if tmux session exists
 # send command to tmux session
+# bash stop loop if a command fails
