@@ -449,3 +449,8 @@ To go further
 # alias in ipdb
 # js what are audio blobs in the browser?
 # js create a python script to send a request to a webpage
+# make bash aliases available in vim
+set shellcmdflag=-ic
+# bash integer expression expected 
+
+
