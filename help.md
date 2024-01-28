@@ -451,6 +451,10 @@ To go further
 # js create a python script to send a request to a webpage
 # make bash aliases available in vim
 set shellcmdflag=-ic
-# bash integer expression expected 
-
+# bash integer expression expected error
+if [ "$DBG_TORCHRAY" -eq 1 ];then
+    pythond generate_run_script.py --json_filename run-jsons/$json_filename
+else
+    python generate_run_script.py --json_filename run-jsons/$json_filename
+fi
 
