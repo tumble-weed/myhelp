@@ -465,3 +465,6 @@ max_epoch = max(enumerate(epochs),key=lambda k:k[1])[0]
 # check if tmux session exists
 # send command to tmux session
 # bash stop loop if a command fails
+# view colored output with less
+https://unix.stackexchange.com/a/19319
+alias rless='less -r'
