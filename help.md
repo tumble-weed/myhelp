@@ -468,3 +468,5 @@ max_epoch = max(enumerate(epochs),key=lambda k:k[1])[0]
 # view colored output with less
 https://unix.stackexchange.com/a/19319
 alias rless='less -r'
+# passing named arguments to bash files
+ENV=1 cmd
