@@ -460,3 +460,5 @@ fi
 # bash extract directory from 
 vimtorchraysmallerdataset is aliased to `vim /root/evaluate-saliency-4/elp_with_scales/torchray/benchmark/smaller_datasets.py'
 # python get argmax of list
+max_epoch = max(enumerate(epochs),key=lambda k:k[1])[0]
+# vim persist copies between session
