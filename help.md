@@ -470,4 +470,17 @@ https://unix.stackexchange.com/a/19319
 alias rless='less -r'
 # passing named arguments to bash files
 ENV=1 cmd
+function f1()
+{
+    echo "$env1"
+}
+
+function f2()
+{
+
+    env1=1 f1
+    echo "hi"
+}
+
+f2
 # git change last commit message
