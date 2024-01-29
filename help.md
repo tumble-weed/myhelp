@@ -536,3 +536,5 @@ f2(){
     echo "$env1"
     }
 f0
+# ssh forward multiple ports in same
+The -L option can be specified multiple times within the same command. Every time with different ports. I.e. ssh -L localPort0:ip:remotePort0 -L localPort1:ip:remotePort1 ...
