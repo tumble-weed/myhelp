@@ -503,3 +503,4 @@ f1
 # bash order of runs when multiple traps are set
 # bash run a command with spaces 
 eval $cmd
+# bash inherit variables from parent but dont modify parent shell
