@@ -515,4 +515,4 @@ set -a
 # bash if element in array 
 
 # rules about input arguments in bash: $* number of arguments, all arguments etc
-
+# cascading of command line options in bash
