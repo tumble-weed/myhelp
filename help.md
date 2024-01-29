@@ -513,3 +513,6 @@ set -a
 
 ...will make any variable defined going forward be automatically exported to the environment, even without an explicit export command.
 # bash if element in array 
+
+# rules about input arguments in bash: $* number of arguments, all arguments etc
+
