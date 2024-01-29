@@ -504,3 +504,11 @@ f1
 # bash run a command with spaces 
 eval $cmd
 # bash inherit variables from parent but dont modify parent shell
+# bash exporting variables to subshells
+No, you can't interact with the parent shell from a subprocess it spawned (without that shell's active participation, which isn't reasonably/practically available in the scenario at hand) -- but you can export your variables to make them accessible to new shells started in child processes.
+
+Running
+
+set -a
+
+...will make any variable defined going forward be automatically exported to the environment, even without an explicit export command.
