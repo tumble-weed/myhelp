@@ -359,21 +359,9 @@ readarray -t my_array <<< "$(ls)"
 file [[  -f "file" ]]
 directory [[ -d "directory" ]]
 variable [[ -v varname ]]
-# bash ls sort by date
-# bash subshell and shell
-# bash read file into a bash script ( not line by line)
-# bash ps format ps command to get pid
-# bash how  much time did a bash command take
-# bash read in a file in bash
-# bash sed awk in bash
-# bash collect all command line arguments into a function and if no argument is given take default arguments
 # bash cat + search
-# bash setting any program as a service
-# bash check if port is being forwarded or not
-# bash list all py files in a folder and open them side by side in vim
+use less -e
 # vim getfilename from a env variable and open it
-# bash find 2 lines that both start with #
-# bash what does $* mean 
 # js interpeter/ compiler
 node
 # python save the audio file and then download it
@@ -457,15 +445,13 @@ if [ "$DBG_TORCHRAY" -eq 1 ];then
 else
     python generate_run_script.py --json_filename run-jsons/$json_filename
 fi
-# bash extract directory from 
-vimtorchraysmallerdataset is aliased to `vim /root/evaluate-saliency-4/elp_with_scales/torchray/benchmark/smaller_datasets.py'
+# bash extract directory from type vimtorchraysmallerdataset is aliased to `vim /root/evaluate-saliency-4/elp_with_scales/torchray/benchmark/smaller_datasets.py'
 # python get argmax of list
 max_epoch = max(enumerate(epochs),key=lambda k:k[1])[0]
 # vim persist copies between session
-# check if tmux session exists
-# send command to tmux session
-# bash stop loop if a command fails
-# view colored output with less
+# tmux check if tmux session exists
+# tmux send command to tmux session
+# bash view colored output with less
 https://unix.stackexchange.com/a/19319
 alias rless='less -r'
 # passing named arguments to bash files
@@ -500,10 +486,8 @@ runindir1 /root/vast-utils
 cat setup.sh
 }
 f1
-# bash order of runs when multiple traps are set
 # bash run a command with spaces 
 eval $cmd
-# bash inherit variables from parent but dont modify parent shell
 # bash exporting variables to subshells
 No, you can't interact with the parent shell from a subprocess it spawned (without that shell's active participation, which isn't reasonably/practically available in the scenario at hand) -- but you can export your variables to make them accessible to new shells started in child processes.
 
@@ -513,6 +497,34 @@ set -a
 
 ...will make any variable defined going forward be automatically exported to the environment, even without an explicit export command.
 # bash if element in array 
-
-# rules about input arguments in bash: $* number of arguments, all arguments etc
-# cascading of command line options in bash
+# bash rules about input arguments in bash: $* number of arguments, all arguments etc
+# bash inherit variables from parent but dont modify parent shell
+# bash collect all command line arguments into a function and if no argument is given take default arguments
+# bash order of runs when multiple traps are set
+# bash stop loop if a command fails
+# bash ls sort by date
+# bash subshell and shell
+# bash read file into a bash script ( not line by line)
+# bash ps format ps command to get pid
+# bash how  much time did a bash command take
+# bash read in a file in bash
+# bash setting any program as a service
+# bash check if port is being forwarded or not
+# bash list all py files in a folder and open them side by side in vim
+# bash find 2 lines that both start with #
+# bash what does $* mean 
+# bash sed awk in bash
+# bash cascading of command line options in bash
+!!YES
+f0(){
+    env1=1 f1
+    echo "f0 $env1"
+    }
+f1(){
+    echo "$env1"
+    f2
+    }
+f2(){
+    echo "$env1"
+    }
+f0
