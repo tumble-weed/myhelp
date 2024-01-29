@@ -501,6 +501,14 @@ set -a
 # bash inherit variables from parent but dont modify parent shell
 # bash collect all command line arguments into a function and if no argument is given take default arguments
 # bash order of runs when multiple traps are set
+Only the last one runs
+f(){
+    trap "echo 'i was first'" EXIT
+    trap "echo 'i am second'" EXIT
+
+}
+f
+i am second
 # bash stop loop if a command fails
 # bash ls sort by date
 # bash subshell and shell
