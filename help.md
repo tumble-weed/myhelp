@@ -538,3 +538,5 @@ f2(){
 f0
 # ssh forward multiple ports in same
 The -L option can be specified multiple times within the same command. Every time with different ports. I.e. ssh -L localPort0:ip:remotePort0 -L localPort1:ip:remotePort1 ...
+# subclass torch tensor to catch nans:
+https://discuss.pytorch.org/t/subclassing-torch-tensor/23754/5
