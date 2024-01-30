@@ -580,3 +580,4 @@ if has("autocmd")
 endif
 # vim write a function to copy the text visually selected, to be copiedto a file. 
 # vim write a function then when you place your cursor in a new file and do :pastf it will paste from that file
+# vim free hotkeys for this
