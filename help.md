@@ -548,3 +548,9 @@ app.mount("/", StaticFiles(directory=".", html=True), name="static")
 # vim go to end of indentd block
 # as a dictionary
 as_dict(a,b,c) = {'a':a,'b':b,'c':c}
+# bash arrays:
+$ar
+ar[@]
+$ar[@]
+${ar[@]}
+"${ar[@]}"
