@@ -563,4 +563,5 @@ history | tail -n 1
 # bash history remove element at 2072
 <SPACE>history -d 2072
 # bash make files
-
+# else if in bash is elif
+elif then
