@@ -541,4 +541,5 @@ The -L option can be specified multiple times within the same command. Every tim
 # subclass torch tensor to catch nans:
 https://discuss.pytorch.org/t/subclassing-torch-tensor/23754/5
 # python your own language to parse todo
-# fastapi staticfiles
+# fastapi static files
+# use pytest to run attribution benchmark to ensure it goes on without failure?
