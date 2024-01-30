@@ -560,3 +560,7 @@ ${ar[@]}
 # python similarly how can be have better communication about the inputs to a function
 # bash see last command in history
 history | tail -n 1
+# bash history remove element at 2072
+<SPACE>history -d 2072
+# bash make files
+
