@@ -578,4 +578,5 @@ if has("autocmd")
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
     \| exe "normal! g'\"" | endif
 endif
-# vim write a function to copy the text visually selected, and command run to be copiedto a file. then when you place your cursor in a new file and do :pastf it will paste from that file
+# vim write a function to copy the text visually selected, to be copiedto a file. 
+# vim write a function then when you place your cursor in a new file and do :pastf it will paste from that file
