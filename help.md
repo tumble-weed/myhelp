@@ -571,3 +571,11 @@ then
  echo ${FOO:0:10}
 # bash start from n till end
  ${FOO:3}
+# vim reopen fileat same location
+" Uncomment the following to have Vim jump to the last position when
+" reopening a file
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
+    \| exe "normal! g'\"" | endif
+endif
+
