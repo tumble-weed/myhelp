@@ -555,3 +555,4 @@ $ar[@]
 ${ar[@]}
 "${ar[@]}"
 # python modify the next line to be xecuted -> use this to early exit, or break. ( modify the call stack)
+# read text file line by line and arrange it in reverse order
