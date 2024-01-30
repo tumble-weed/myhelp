@@ -569,4 +569,5 @@ elif then
 If the variable is: FOO="qwertzuiopasdfghjklyxcvbnm"
 then
  echo ${FOO:0:10}
-
+# bash start from n till end
+ ${FOO:3}
