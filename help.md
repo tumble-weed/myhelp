@@ -374,8 +374,6 @@ node
 uvicorn server:app --reload --host 0.0.0.0 --port 8002
 # git different gitusers for different directories
 # or set crenetials when you login, and use that just within that session. in envvariables $GH
-# python fastapi mounting static files
-app.mount("/", StaticFiles(directory=".", html=True), name="static")
 # passing variables to subshells
 
 
@@ -541,6 +539,8 @@ The -L option can be specified multiple times within the same command. Every tim
 # subclass torch tensor to catch nans:
 https://discuss.pytorch.org/t/subclassing-torch-tensor/23754/5
 # python your own language to parse todo
-# fastapi static files
+# python fastapi mounting static files
+app.mount("/", StaticFiles(directory=".", html=True), name="static")
+
 # use pytest to run attribution benchmark to ensure it goes on without failure?
 # python regex module basic usage
