@@ -555,7 +555,8 @@ $ar[@]
 ${ar[@]}
 "${ar[@]}"
 # python modify the next line to be xecuted -> use this to early exit, or break. ( modify the call stack)
-# read text file line by line and arrange it in reverse order
-# how can we have better communication about what is returned from a function ( e.g. if it is a list or dictionary)
-# similarly how can be have better communication about the inputs to a function
-# see last command in history
+# bash read text file line by line and arrange it in reverse order
+# python how can we have better communication about what is returned from a function ( e.g. if it is a list or dictionary)
+# python similarly how can be have better communication about the inputs to a function
+# bash see last command in history
+history | tail -n 1
