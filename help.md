@@ -565,3 +565,8 @@ history | tail -n 1
 # bash make files
 # else if in bash is elif
 elif then
+#first n characters of a string
+If the variable is: FOO="qwertzuiopasdfghjklyxcvbnm"
+then
+ echo ${FOO:0:10}
+
