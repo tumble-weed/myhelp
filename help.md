@@ -546,3 +546,5 @@ app.mount("/", StaticFiles(directory=".", html=True), name="static")
 # python regex module basic usage
 # python instead of installing import a folder so that you can refer to its elements by using . notation
 # vim go to end of indentd block
+# as a dictionary
+as_dict(a,b,c) = {'a':a,'b':b,'c':c}
