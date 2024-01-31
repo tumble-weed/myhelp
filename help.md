@@ -581,3 +581,12 @@ endif
 # vim write a function to copy the text visually selected, to be copiedto a file. 
 # vim write a function then when you place your cursor in a new file and do :pastf it will paste from that file
 # vim free hotkeys for this
+# how to make a new user in linux
+# linux checking against user password
+if pamtester pam_unix.so $USER authenticate; then
+    echo "Authentication successful. You may proceed."
+    # Your command or script logic goes here
+else
+    echo "Authentication failed. Access denied."
+fi
+
