@@ -590,3 +590,5 @@ else
     echo "Authentication failed. Access denied."
 fi
 #bash watch cant run aliases
+# bash providing encrypted password to bash script
+https://www.makeuseof.com/encrypt-password-shell-scripts-linux/
