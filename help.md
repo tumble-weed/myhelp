@@ -589,4 +589,4 @@ if pamtester pam_unix.so $USER authenticate; then
 else
     echo "Authentication failed. Access denied."
 fi
-
+#bash watch cant run aliases
