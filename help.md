@@ -592,3 +592,5 @@ fi
 #bash watch cant run aliases
 # bash providing encrypted password to bash script
 https://www.makeuseof.com/encrypt-password-shell-scripts-linux/
+# sed adding a line before the first line
+sed -i '1s/^/hello this is before the first line\n/' myfile.txt
