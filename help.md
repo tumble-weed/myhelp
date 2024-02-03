@@ -594,3 +594,16 @@ fi
 https://www.makeuseof.com/encrypt-password-shell-scripts-linux/
 # sed adding a line before the first line
 sed -i '1s/^/hello this is before the first line\n/' myfile.txt
+# do local variables commute to inner function calls?
+f1(){
+    echo $v
+    local v2=2
+    }
+f0(){
+    local v=1
+    f1
+    echo ${v2}
+    }
+f0
+1
+0
