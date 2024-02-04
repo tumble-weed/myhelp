@@ -611,3 +611,7 @@ f0
 # python how do i test a fastapi code without using the html page
 # bash select only those rows from ls that are after Jan 2
 # vim noremap, <leader>
+# python debugging edit current file
+(ipdb) interact
+file = __file__
+%edit $file
