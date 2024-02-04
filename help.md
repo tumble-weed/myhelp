@@ -615,3 +615,6 @@ f0
 (ipdb) interact
 file = __file__
 %edit $file
+# bash cd only autocomplete directories 
+# bash vim type auto complete, cycle through full filenames
+
