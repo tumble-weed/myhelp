@@ -608,5 +608,5 @@ f0
 1
 0
 # html how do i save an audio blob from a wav file
-# html how do i test a fastapi code without using the html page
+# python how do i test a fastapi code without using the html page
 
