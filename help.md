@@ -617,3 +617,4 @@ file = __file__
 # bash rules about input arguments in bash: $* number of arguments, all arguments etc
 # bash inherit variables from parent but dont modify parent shell
 # bash collect all command line arguments into a function and if no argument is given take default arguments
+# bash encrypt files to add the key or token, and unencrypt them to run
