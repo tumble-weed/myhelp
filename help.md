@@ -619,3 +619,5 @@ file = __file__
 # bash collect all command line arguments into a function and if no argument is given take default arguments
 # bash encrypt files to add the key or token, and unencrypt them to run
 # bash remove the first element of the array
+# bash empty array
+# bash add elements to an array
