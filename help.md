@@ -494,10 +494,6 @@ Running
 set -a
 
 ...will make any variable defined going forward be automatically exported to the environment, even without an explicit export command.
-# bash if element in array 
-# bash rules about input arguments in bash: $* number of arguments, all arguments etc
-# bash inherit variables from parent but dont modify parent shell
-# bash collect all command line arguments into a function and if no argument is given take default arguments
 # bash order of runs when multiple traps are set
 Only the last one runs
 f(){
@@ -507,19 +503,6 @@ f(){
 }
 f
 i am second
-# bash stop loop if a command fails
-# bash ls sort by date
-# bash subshell and shell
-# bash read file into a bash script ( not line by line)
-# bash ps format ps command to get pid
-# bash how  much time did a bash command take
-# bash read in a file in bash
-# bash setting any program as a service
-# bash check if port is being forwarded or not
-# bash list all py files in a folder and open them side by side in vim
-# bash find 2 lines that both start with #
-# bash what does $* mean 
-# bash sed awk in bash
 # bash cascading of command line options in bash
 !!YES
 f0(){
@@ -538,31 +521,19 @@ f0
 The -L option can be specified multiple times within the same command. Every time with different ports. I.e. ssh -L localPort0:ip:remotePort0 -L localPort1:ip:remotePort1 ...
 # subclass torch tensor to catch nans:
 https://discuss.pytorch.org/t/subclassing-torch-tensor/23754/5
-# python your own language to parse todo
 # python fastapi mounting static files
 app.mount("/", StaticFiles(directory=".", html=True), name="static")
-
-# use pytest to run attribution benchmark to ensure it goes on without failure?
-# python regex module basic usage
-# python instead of installing import a folder so that you can refer to its elements by using . notation
-# vim go to end of indentd block
-# as a dictionary
-as_dict(a,b,c) = {'a':a,'b':b,'c':c}
+# as a dictionary as_dict(a,b,c) = {'a':a,'b':b,'c':c}
 # bash arrays:
 $ar
 ar[@]
 $ar[@]
 ${ar[@]}
 "${ar[@]}"
-# python modify the next line to be xecuted -> use this to early exit, or break. ( modify the call stack)
-# bash read text file line by line and arrange it in reverse order
-# python how can we have better communication about what is returned from a function ( e.g. if it is a list or dictionary)
-# python similarly how can be have better communication about the inputs to a function
 # bash see last command in history
 history | tail -n 1
 # bash history remove element at 2072
 <SPACE>history -d 2072
-# bash make files
 # else if in bash is elif
 elif then
 #first n characters of a string
@@ -578,10 +549,6 @@ if has("autocmd")
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
     \| exe "normal! g'\"" | endif
 endif
-# vim write a function to copy the text visually selected, to be copiedto a file. 
-# vim write a function then when you place your cursor in a new file and do :pastf it will paste from that file
-# vim free hotkeys for this
-# how to make a new user in linux
 # linux checking against user password
 if pamtester pam_unix.so $USER authenticate; then
     echo "Authentication successful. You may proceed."
@@ -589,7 +556,6 @@ if pamtester pam_unix.so $USER authenticate; then
 else
     echo "Authentication failed. Access denied."
 fi
-#bash watch cant run aliases
 # bash providing encrypted password to bash script
 https://www.makeuseof.com/encrypt-password-shell-scripts-linux/
 # sed adding a line before the first line
@@ -607,14 +573,47 @@ f0(){
 f0
 1
 0
-# html how do i save an audio blob from a wav file
-# python how do i test a fastapi code without using the html page
-# bash select only those rows from ls that are after Jan 2
-# vim noremap, <leader>
 # python debugging edit current file
 (ipdb) interact
 file = __file__
 %edit $file
 # bash cd only autocomplete directories 
 # bash vim type auto complete, cycle through full filenames
+# python what does traceback do
+# html how do i save an audio blob from a wav file
+# python how do i test a fastapi code without using the html page
+# bash select only those rows from ls that are after Jan 2
+# vim noremap, <leader>
+# bash watch cant run aliases
+# vim write a function to copy the text visually selected, to be copiedto a file. 
+# vim write a function then when you place your cursor in a new file and do :pastf it will paste from that file
+# vim free hotkeys for this
+# bash how to make a new user in linux
+# bash make files
+# python modify the next line to be xecuted -> use this to early exit, or break. ( modify the call stack)
+# bash read text file line by line and arrange it in reverse order
+# python how can we have better communication about what is returned from a function ( e.g. if it is a list or dictionary)
+# python similarly how can be have better communication about the inputs to a function
+# use pytest to run attribution benchmark to ensure it goes on without failure?
+# python regex module basic usage
+# python instead of installing import a folder so that you can refer to its elements by using . notation
+# vim go to end of indentd block
+# python your own language to parse todo
+# bash stop loop if a command fails
+# bash ls sort by date
+# bash subshell and shell
+# bash read file into a bash script ( not line by line)
+# bash ps format ps command to get pid
+# bash how  much time did a bash command take
+# bash read in a file in bash
+# bash setting any program as a service
+# bash check if port is being forwarded or not
+# bash list all py files in a folder and open them side by side in vim
+# bash find 2 lines that both start with #
+# bash what does $* mean 
+# bash sed awk in bash
+# bash if element in array 
+# bash rules about input arguments in bash: $* number of arguments, all arguments etc
+# bash inherit variables from parent but dont modify parent shell
+# bash collect all command line arguments into a function and if no argument is given take default arguments
 
