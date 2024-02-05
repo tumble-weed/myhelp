@@ -588,16 +588,17 @@ file = __file__
 # vim write a function to copy the text visually selected, to be copiedto a file. 
 # vim write a function then when you place your cursor in a new file and do :pastf it will paste from that file
 # vim free hotkeys for this
+# vim go to end of indentd block
+# vim basic vim function
 # bash how to make a new user in linux
 # bash make files
-# python modify the next line to be xecuted -> use this to early exit, or break. ( modify the call stack)
 # bash read text file line by line and arrange it in reverse order
 # python how can we have better communication about what is returned from a function ( e.g. if it is a list or dictionary)
 # python similarly how can be have better communication about the inputs to a function
 # use pytest to run attribution benchmark to ensure it goes on without failure?
+# python modify the next line to be xecuted -> use this to early exit, or break. ( modify the call stack)
 # python regex module basic usage
 # python instead of installing import a folder so that you can refer to its elements by using . notation
-# vim go to end of indentd block
 # python your own language to parse todo
 # bash stop loop if a command fails
 # bash ls sort by date
@@ -616,4 +617,3 @@ file = __file__
 # bash rules about input arguments in bash: $* number of arguments, all arguments etc
 # bash inherit variables from parent but dont modify parent shell
 # bash collect all command line arguments into a function and if no argument is given take default arguments
-
