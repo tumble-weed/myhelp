@@ -633,6 +633,7 @@ set tabstospaces
 # bash encrypt files to add the key or token, and unencrypt them to run
 # bash remove the first element of the array
 # bash empty array
+local a=()
 # bash add elements to an array
 ar+=("a")
 
