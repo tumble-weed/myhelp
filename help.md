@@ -625,6 +625,9 @@ file = __file__
 If you type ma , it will create bookmark on the current line at the current location with name a.
 For example, if you type `a , it will take you to the bookmark with name “a”. i.e It will take you to the place where the cursor is high-lighted in the above Fig 1.
 # nano syntax highlighting
+/usr/share/nano
+~/.nanorc
 # nano auto indent
 # why do we start fast ap with uvicorn
 # what is asgi and wsgi
+
