@@ -628,6 +628,7 @@ For example, if you type `a , it will take you to the bookmark with name “a”
 /usr/share/nano
 ~/.nanorc
 # nano auto indent
+set autoindent
 # why do we start fast ap with uvicorn
 # what is asgi and wsgi
 
