@@ -602,6 +602,18 @@ ar+=("a")
 # bash select only those rows from ls that are after Jan 2
 # vim noremap, <leader>
 # bash watch cant run aliases
+
+
+It's nothing to do with users.
+
+Aliases are only expanded in the interactive shell for which they are defined - so an interactive bash shell if you defined them via ~/.bashrc, or an interactive zsh shell if you define them in ~/.zshrc for example.
+
+The watch command invokes commands via a non-interactive /bin/sh shell.
+
+By aliasing watch itself, as alias watchh='watch ' (with a trailing space) and then using watchh gpu, you force the current interactive shell to expand gpu before it's passed to watch.
+
+Note that in zsh, aliases may be defined as global which allows them to be expanded anywhere in a command - avoiding the need to alias watch with a trailing space.
+
 # vim write a function to copy the text visually selected, to be copiedto a file. 
 # vim write a function then when you place your cursor in a new file and do :pastf it will paste from that file
 # vim free hotkeys for this
