@@ -588,6 +588,10 @@ set autoindent
 # nano tab expansion
 set tabsize 4
 set tabstospaces
+# bash empty array
+local a=()
+# bash add elements to an array
+ar+=("a")
 # why do we start fast api with uvicorn
 # what is asgi and wsgi
 # bash cd only autocomplete directories 
@@ -632,8 +636,4 @@ set tabstospaces
 # bash collect all command line arguments into a function and if no argument is given take default arguments
 # bash encrypt files to add the key or token, and unencrypt them to run
 # bash remove the first element of the array
-# bash empty array
-local a=()
-# bash add elements to an array
-ar+=("a")
 
