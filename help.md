@@ -577,6 +577,19 @@ f0
 (ipdb) interact
 file = __file__
 %edit $file
+# vim bookmark a line
+If you type ma , it will create bookmark on the current line at the current location with name a.
+For example, if you type `a , it will take you to the bookmark with name “a”. i.e It will take you to the place where the cursor is high-lighted in the above Fig 1.
+# nano syntax highlighting
+/usr/share/nano
+~/.nanorc
+# nano auto indent
+set autoindent
+# nano tab expansion
+set tabsize 4
+set tabstospaces
+# why do we start fast api with uvicorn
+# what is asgi and wsgi
 # bash cd only autocomplete directories 
 # bash vim type auto complete, cycle through full filenames
 # python what does traceback do
@@ -621,14 +634,5 @@ file = __file__
 # bash remove the first element of the array
 # bash empty array
 # bash add elements to an array
-# vim bookmark a line
-If you type ma , it will create bookmark on the current line at the current location with name a.
-For example, if you type `a , it will take you to the bookmark with name “a”. i.e It will take you to the place where the cursor is high-lighted in the above Fig 1.
-# nano syntax highlighting
-/usr/share/nano
-~/.nanorc
-# nano auto indent
-set autoindent
-# why do we start fast ap with uvicorn
-# what is asgi and wsgi
+ar+=("a")
 
