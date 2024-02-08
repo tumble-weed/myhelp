@@ -592,15 +592,6 @@ set tabstospaces
 local a=()
 # bash add elements to an array
 ar+=("a")
-# why do we start fast api with uvicorn
-# what is asgi and wsgi
-# bash cd only autocomplete directories 
-# bash vim type auto complete, cycle through full filenames
-# python what does traceback do
-# html how do i save an audio blob from a wav file
-# python how do i test a fastapi code without using the html page
-# bash select only those rows from ls that are after Jan 2
-# vim noremap, <leader>
 # bash watch cant run aliases
 
 
@@ -613,7 +604,15 @@ The watch command invokes commands via a non-interactive /bin/sh shell.
 By aliasing watch itself, as alias watchh='watch ' (with a trailing space) and then using watchh gpu, you force the current interactive shell to expand gpu before it's passed to watch.
 
 Note that in zsh, aliases may be defined as global which allows them to be expanded anywhere in a command - avoiding the need to alias watch with a trailing space.
-
+# why do we start fast api with uvicorn
+# what is asgi and wsgi
+# bash cd only autocomplete directories 
+# bash vim type auto complete, cycle through full filenames
+# python what does traceback do
+# html how do i save an audio blob from a wav file
+# python how do i test a fastapi code without using the html page
+# bash select only those rows from ls that are after Jan 2
+# vim noremap, <leader>
 # vim write a function to copy the text visually selected, to be copiedto a file. 
 # vim write a function then when you place your cursor in a new file and do :pastf it will paste from that file
 # vim free hotkeys for this
@@ -622,7 +621,7 @@ Note that in zsh, aliases may be defined as global which allows them to be expan
 # bash how to make a new user in linux
 # bash make files
 # bash read text file line by line and arrange it in reverse order
-# python how can we have better communication about what is returned from a function ( e.g. if it is a list or dictionary)
+# python how can we have better communication about what is returned from a function ( e.g. if it is a list or dictionary). Pydantic for debugging?
 # python similarly how can be have better communication about the inputs to a function
 # use pytest to run attribution benchmark to ensure it goes on without failure?
 # python modify the next line to be xecuted -> use this to early exit, or break. ( modify the call stack)
@@ -640,6 +639,7 @@ Note that in zsh, aliases may be defined as global which allows them to be expan
 # bash check if port is being forwarded or not
 # bash list all py files in a folder and open them side by side in vim
 # bash find 2 lines that both start with #
+# bash find if the first character of line is a #
 # bash what does $* mean 
 # bash sed awk in bash
 # bash if element in array 
