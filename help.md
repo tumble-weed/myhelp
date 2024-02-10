@@ -648,4 +648,14 @@ Note that in zsh, aliases may be defined as global which allows them to be expan
 # bash collect all command line arguments into a function and if no argument is given take default arguments
 # bash encrypt files to add the key or token, and unencrypt them to run
 # bash remove the first element of the array
-
+# bash locally modifying a global variable 
+ar=(1 2)
+f(){
+    #local a=("a" "b" "c")
+    local ar
+    ar+=(3)
+    echo "${ar[@]}"
+}
+echo "${ar[@]}"
+f
+echo "${ar[@]}"
