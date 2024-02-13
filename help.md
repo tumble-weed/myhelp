@@ -668,3 +668,6 @@ f
 # 1 2 3
 echo "${ar[@]}"
 # 1 2
+# git unstage a file
+git reset -- <filepath>
+# git see previous commiteed version of a file
