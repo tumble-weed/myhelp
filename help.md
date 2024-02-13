@@ -673,3 +673,5 @@ git reset -- <filepath>
 # git see previous commiteed version of a file
 # git undelete a file
 git checkout -- setup.py
+# vim get output of last bash command to past
+r !ret
