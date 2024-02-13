@@ -650,15 +650,21 @@ Note that in zsh, aliases may be defined as global which allows them to be expan
 # bash remove the first element of the array
 # bash locally modifying a global variable 
 ar=(1 2)
+f2(){ 
+    echo "${ar[@]}" 
+} 
 f(){
     # make a local copy of the array
     local ar=("${ar[@]}")
     ar+=(3)
     echo "${ar[@]}"
+    f2
 }
 echo "${ar[@]}"
 # 1 2
 f
+
+# 1 2 3
 # 1 2 3
 echo "${ar[@]}"
 # 1 2
