@@ -651,11 +651,14 @@ Note that in zsh, aliases may be defined as global which allows them to be expan
 # bash locally modifying a global variable 
 ar=(1 2)
 f(){
-    #local a=("a" "b" "c")
-    local ar
+    # make a local copy of the array
+    local ar=("${ar[@]}")
     ar+=(3)
     echo "${ar[@]}"
 }
 echo "${ar[@]}"
+# 1 2
 f
+# 1 2 3
 echo "${ar[@]}"
+# 1 2
