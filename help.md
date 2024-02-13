@@ -671,3 +671,5 @@ echo "${ar[@]}"
 # git unstage a file
 git reset -- <filepath>
 # git see previous commiteed version of a file
+# git undelete a file
+git checkout -- setup.py
