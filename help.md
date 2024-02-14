@@ -676,4 +676,5 @@ git checkout -- setup.py
 # vim get output of last bash command to paste into vim
 :r !ret
 # analyze code to see which breakpoints are actually active?
+#how to run an alias on a remote computer after ssh
 # ret and cap output of last command
