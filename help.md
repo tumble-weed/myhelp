@@ -674,4 +674,4 @@ git reset -- <filepath>
 # git undelete a file
 git checkout -- setup.py
 # vim get output of last bash command to past
-r !ret
+# ret and cap output of last command
