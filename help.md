@@ -673,5 +673,7 @@ git reset -- <filepath>
 # git see previous commiteed version of a file
 # git undelete a file
 git checkout -- setup.py
-# vim get output of last bash command to past
+# vim get output of last bash command to paste into vim
+:r !ret
+# analyze code to see which breakpoints are actually active?
 # ret and cap output of last command
