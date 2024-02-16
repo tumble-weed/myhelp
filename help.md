@@ -678,4 +678,7 @@ git checkout -- setup.py
 # analyze code to see which breakpoints are actually active?
 #how to run an alias on a remote computer after ssh
 #load vim buffers from file. e.g. tags for vimtodo2
+#apt-key add?
+#torun bash commands with bashrc sourced
+bash -i -c "command"
 # attack this domain to get the papers https://cmsworkshops.com/ICIP2024/Papers/Uploads/Proposals/PaperNum/1737/20240212050454_734992_1737.pdf
