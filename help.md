@@ -682,3 +682,4 @@ git checkout -- setup.py
 #torun bash commands with bashrc sourced
 bash -i -c "command"
 # attack this domain to get the papers https://cmsworkshops.com/ICIP2024/Papers/Uploads/Proposals/PaperNum/1737/20240212050454_734992_1737.pdf
+# restore program https://www.xmodulo.com/how-to-checkpoint-and-restore-linux-process.html
