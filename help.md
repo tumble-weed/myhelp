@@ -685,4 +685,6 @@ bash -i -c "command"
 #what are certificates for https?
 #grep and sed work on files, to make them deal with strings you need to do something else
 #use cut for delimiter and for fields,id of the cut out part
+#vim custom syntax
+https://superuser.com/questions/844004/creating-a-simple-vim-syntax-highlighting
 # restore program https://www.xmodulo.com/how-to-checkpoint-and-restore-linux-process.html
