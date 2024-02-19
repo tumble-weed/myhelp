@@ -693,4 +693,5 @@ https://superuser.com/questions/844004/creating-a-simple-vim-syntax-highlighting
 #vim autocmd
 #vim BufRead, BufNewFile
 #difference between cterm and gui https://stackoverflow.com/questions/60590376/what-is-the-difference-between-cterm-color-and-gui-color
+# gpg signing
 # restore program https://www.xmodulo.com/how-to-checkpoint-and-restore-linux-process.html
