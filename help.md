@@ -687,4 +687,10 @@ bash -i -c "command"
 #use cut for delimiter and for fields,id of the cut out part
 #vim custom syntax
 https://superuser.com/questions/844004/creating-a-simple-vim-syntax-highlighting
+#in vim what is ctermfg and guifg
+#in vim what does match do, why did it not work with syntax match
+#in vim how do i define the syntax for a custom file
+#vim autocmd
+#vim BufRead, BufNewFile
+#difference between cterm and gui https://stackoverflow.com/questions/60590376/what-is-the-difference-between-cterm-color-and-gui-color
 # restore program https://www.xmodulo.com/how-to-checkpoint-and-restore-linux-process.html
