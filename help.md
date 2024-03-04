@@ -695,4 +695,6 @@ https://superuser.com/questions/844004/creating-a-simple-vim-syntax-highlighting
 #vim goto end of indented block
 #difference between cterm and gui https://stackoverflow.com/questions/60590376/what-is-the-difference-between-cterm-color-and-gui-color
 # gpg signing
+# Mar Asia 4 --remove-source-files for remove the source files when doing rsync
+# find <source_directory> -type d -empty -delete
 # restore program https://www.xmodulo.com/how-to-checkpoint-and-restore-linux-process.html
