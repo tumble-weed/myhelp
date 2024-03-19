@@ -701,4 +701,7 @@ https://superuser.com/questions/844004/creating-a-simple-vim-syntax-highlighting
 # compiling latex on terminal: 
 pdflatex abc.tex 
 bibtex abc
+#17 Mar 2024 11:01:56 regex match characters but not other characters
+#19 Mar 2024 11:15:35 resizebox for resizing latex equations
+https://tex.stackexchange.com/questions/237046/resizebox-within-equation-environment
 pdflatex abc
