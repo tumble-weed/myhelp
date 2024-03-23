@@ -704,4 +704,8 @@ bibtex abc
 #17 Mar 2024 11:01:56 regex match characters but not other characters
 #19 Mar 2024 11:15:35 resizebox for resizing latex equations
 https://tex.stackexchange.com/questions/237046/resizebox-within-equation-environment
+#23 Mar 2024 21:43:04 
+# send a command to all tty
+https://unix.stackexchange.com/a/42368
+for tty in /dev/pts/*; do clear > "$tty"; done # Linux (Ubuntu, via SSH)
 pdflatex abc
