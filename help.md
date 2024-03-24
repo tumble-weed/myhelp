@@ -709,3 +709,5 @@ https://tex.stackexchange.com/questions/237046/resizebox-within-equation-environ
 https://unix.stackexchange.com/a/42368
 for tty in /dev/pts/*; do clear > "$tty"; done # Linux (Ubuntu, via SSH)
 pdflatex abc
+# tmux ctrl arrow problems
+https://superuser.com/questions/1621280/what-does-ctrlarrow-do-in-vim-within-tmux-and-how-do-i-skip-words
