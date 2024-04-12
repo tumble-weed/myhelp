@@ -713,4 +713,5 @@ pdflatex abc
 https://superuser.com/questions/1621280/what-does-ctrlarrow-do-in-vim-within-tmux-and-how-do-i-skip-words
 # pytorch out of memory error pytorch_cuda_alloc_conf
 PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:512
-# here doc 
+# bash here doc 
+# bash ls dir1/{subdir1,subdir1} and ls dir2 together
