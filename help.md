@@ -716,3 +716,4 @@ PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:512
 # bash here doc 
 # bash ls dir1/{subdir1,subdir1} and ls dir2 together
 # which git commands require --
+# bkup_cifar-10-multithresh_saliency_game_typeboth_n_areas42-resnet8_relu-road
