@@ -670,7 +670,7 @@ echo "${ar[@]}"
 # 1 2
 # git unstage a file
 git reset -- <filepath>
-# git see previous commiteed version of a file
+# SF git see previous commiteed version of a file
 # git undelete a file
 git checkout -- setup.py
 # vim get output of last bash command to paste into vim
@@ -716,4 +716,6 @@ PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:512
 # bash here doc 
 # bash ls dir1/{subdir1,subdir1} and ls dir2 together
 # which git commands require --
-# bkup_cifar-10-multithresh_saliency_game_typeboth_n_areas42-resnet8_relu-road
+# - SF ERC exclude directories from rclone
+# SF,ERC github see against file in previous commit
+# SF vim search for line under cursor
