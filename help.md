@@ -718,4 +718,6 @@ PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:512
 # which git commands require --
 # - SF ERC exclude directories from rclone
 # SF,ERC github see against file in previous commit
+#29 Apr 2024 07:45:37 check if key in bash dictinonary
+#29 Apr 2024 07:45:51 check if key exists in bash dictionary
 # SF vim search for line under cursor
