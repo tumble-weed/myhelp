@@ -720,4 +720,8 @@ PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:512
 # SF,ERC github see against file in previous commit
 #29 Apr 2024 07:45:37 check if key in bash dictinonary
 #29 Apr 2024 07:45:51 check if key exists in bash dictionary
+#05 May 2024 14:46:35 bash default value as an array
+#09 May 2024 15:50:47 multiple paste buffers in vim
+#12 May 2024 12:05:12 get signature of a function
+inspect.signature(foo)
 # SF vim search for line under cursor
