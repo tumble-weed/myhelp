@@ -724,4 +724,24 @@ PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:512
 # 09 May 2024 15:50:47 multiple paste buffers in vim
 # 12 May 2024 12:05:12 get signature of a function
 inspect.signature(foo)
+#12 May 2024 21:42:49 git rm does not delete the directory, only seems to remove it from the index
+#14 May 2024 09:55:08 staticmethod __get__ TypeError: staticmethod object is not callable
+
+# Debugging multiprocessing
+1. disable cpu_count by patching it, so that if processes are started with cpu_count, then we can limit them to 1
+2. check where multiproc is being used to create a pool, or process, and ensure those lines use cpu_count
+# what is fork and spawn in multiprocessing
+# debugging multiprocesing
+https://stackoverflow.com/a/74225580
+
+
+If you are trying to debug multiple processes running simultaneously, as shown in your example, then there's no obvious way to do that from a single terminal: which process should get the keyboard input? Because of this, Python always connects sys.stdin in the child process to os.devnull. But this means that when the debugger tries to get input from stdin, it immediately reaches end-of-file and reports an error.
+
+If you can limit yourself to one subprocess at a time, at least for debugging, then you could get around this by setting sys.stdin = open(0) to reopen the main stdin, as described here.
+
+But if multiple subprocesses may be at breakpoints simultaneously, then you will need a different solution, since they would all end up fighting over input from the single terminal. In that case, RemotePdb is probably your best bet, as described by @OnionKnight.
+#Remote pdb
+https://stackoverflow.com/questions/11106000/python-multiprocess-debugging
 # SF vim search for line under cursor
+
+
