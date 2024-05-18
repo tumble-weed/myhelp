@@ -751,3 +751,6 @@ https://stackoverflow.com/questions/11106000/python-multiprocess-debugging
 # vim read only mode
 vim -R # is readony
 vim -M # sets modifiable off
+# delete all blank lines vim
+:g/^$/d
+g runs a command globally
