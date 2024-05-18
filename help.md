@@ -744,4 +744,5 @@ But if multiple subprocesses may be at breakpoints simultaneously, then you will
 https://stackoverflow.com/questions/11106000/python-multiprocess-debugging
 # SF vim search for line under cursor
 
-
+#15 May 2024 17:23:47 what is virtual x server xvfb
+#downloading form onedrive https://stackoverflow.com/questions/62634214/how-to-download-protected-files-from-onedrive-using-wget
