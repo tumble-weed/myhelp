@@ -522,7 +522,7 @@ The -L option can be specified multiple times within the same command. Every tim
 # subclass torch tensor to catch nans:
 https://discuss.pytorch.org/t/subclassing-torch-tensor/23754/5
 # python fastapi mounting static files
-app.mount("/", StaticFiles(directory=".", html=True), name="static")
+    app.mount("/", StaticFiles(directory=".", html=True), name="static")
 # as a dictionary as_dict(a,b,c) = {'a':a,'b':b,'c':c}
 # bash arrays:
 $ar
@@ -604,7 +604,9 @@ The watch command invokes commands via a non-interactive /bin/sh shell.
 By aliasing watch itself, as alias watchh='watch ' (with a trailing space) and then using watchh gpu, you force the current interactive shell to expand gpu before it's passed to watch.
 
 Note that in zsh, aliases may be defined as global which allows them to be expanded anywhere in a command - avoiding the need to alias watch with a trailing space.
-# why do we start fast api with uvicorn
+# why do we start fastapi with uvicorn
+    . what is uvicorn
+    . what will happen if we dont have uvicorn
 # what is asgi and wsgi
 # bash cd only autocomplete directories 
 # bash vim type auto complete, cycle through full filenames
@@ -746,3 +748,6 @@ https://stackoverflow.com/questions/11106000/python-multiprocess-debugging
 
 #15 May 2024 17:23:47 what is virtual x server xvfb
 #downloading form onedrive https://stackoverflow.com/questions/62634214/how-to-download-protected-files-from-onedrive-using-wget
+# vim read only mode
+vim -R # is readony
+vim -M # sets modifiable off
