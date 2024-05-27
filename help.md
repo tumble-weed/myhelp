@@ -754,3 +754,5 @@ vim -M # sets modifiable off
 # delete all blank lines vim
 :g/^$/d
 g runs a command globally
+#pylint for only NameErrors
+pylint --disable=all --enable=undefined-variable try_dff.py
