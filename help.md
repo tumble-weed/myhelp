@@ -757,3 +757,4 @@ g runs a command globally
 #pylint for only NameErrors
 pylint --disable=all --enable=undefined-variable,import-error try_dff.py
 # inspect.getfile(some_func)
+# python -m trace --ignore-dir=$(python -c 'import sys ; print ":".join(sys.path)[1:]') -t ./script.py
