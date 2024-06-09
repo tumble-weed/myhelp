@@ -760,3 +760,5 @@ pylint --disable=all --enable=undefined-variable,import-error try_dff.py
 inspect.getfile(some_func)
 # python tracewith ignore
 python -m trace --ignore-dir=$(python -c 'import sys ; print ":".join(sys.path)[1:]') -t ./script.py
+# bash login files
+https://www.baeldung.com/linux/bashrc-vs-bash-profile-vs-profile
