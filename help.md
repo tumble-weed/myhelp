@@ -762,3 +762,5 @@ inspect.getfile(some_func)
 python -m trace --ignore-dir=$(python -c 'import sys ; print ":".join(sys.path)[1:]') -t ./script.py
 # bash login files
 https://www.baeldung.com/linux/bashrc-vs-bash-profile-vs-profile
+# Banner
+/etc/banner
