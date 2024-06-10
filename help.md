@@ -764,3 +764,5 @@ python -m trace --ignore-dir=$(python -c 'import sys ; print ":".join(sys.path)[
 https://www.baeldung.com/linux/bashrc-vs-bash-profile-vs-profile
 # Banner
 /etc/banner
+# bash rerun last command ( use fl with fzf)
+$(!!)
