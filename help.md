@@ -766,3 +766,9 @@ https://www.baeldung.com/linux/bashrc-vs-bash-profile-vs-profile
 /etc/banner
 # bash rerun last command ( use fl with fzf)
 $(!!)
+# vim disable jump on search
+https://stackoverflow.com/questions/4256697/vim-search-and-highlight-but-do-not-jump
+# grep invert
+grep -v
+# grep regex
+grep -E -i 'foo|bar'
