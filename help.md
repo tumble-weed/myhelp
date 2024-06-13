@@ -774,3 +774,5 @@ grep -v
 grep -E -i 'foo|bar'
 # conda clean
 conda clean --all
+# pip remove cache
+pip cache purge
