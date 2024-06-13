@@ -772,3 +772,5 @@ https://stackoverflow.com/questions/4256697/vim-search-and-highlight-but-do-not-
 grep -v
 # grep regex
 grep -E -i 'foo|bar'
+# conda clean
+conda clean --all
